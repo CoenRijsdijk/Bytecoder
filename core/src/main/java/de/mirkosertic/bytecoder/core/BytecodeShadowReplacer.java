@@ -74,6 +74,7 @@ public class BytecodeShadowReplacer extends BytecodeReplacer {
             }
 
             final BytecodeAnnotation theClassAnnotation = theShadowType.getAttributes().getAnnotationByType(SubstitutesInClass.class.getName());
+            System.out.println("NAME: " + theShadowNameStr);
             if (theClassAnnotation == null) {
                 // No valid shadow type
                 return new MergeResult(

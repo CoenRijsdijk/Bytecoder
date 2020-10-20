@@ -21,6 +21,10 @@ import java.util.ServiceLoader;
 
 public abstract class ClassLibProvider {
 
+    {
+        System.out.println("InstantiateProvider: " + this.getClass().getName());
+    }
+
     private final static ServiceLoader<ClassLibProvider> LOADER = ServiceLoader.load(ClassLibProvider.class);
 
     public abstract String getResourceBase();

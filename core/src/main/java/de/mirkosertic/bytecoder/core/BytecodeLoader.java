@@ -46,6 +46,7 @@ public class BytecodeLoader {
 
     public BytecodeClass loadByteCode(final BytecodeObjectTypeRef aTypeRef, final BytecodeReplacer aDefaultReplacer) throws IOException, ClassNotFoundException {
         final String theResourceName = aTypeRef.name().replace(".", "/") + ".class";
+        System.out.println("theResourceName: " + theResourceName);
 
         for (final ClassLibProvider theProvider : ClassLibProvider.availableProviders()) {
             final InputStream theStream = classLoader.getResourceAsStream(theProvider.getResourceBase() + "/" + theResourceName);
