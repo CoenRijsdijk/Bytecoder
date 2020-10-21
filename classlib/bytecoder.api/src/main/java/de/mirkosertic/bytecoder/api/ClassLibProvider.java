@@ -36,6 +36,7 @@ public abstract class ClassLibProvider {
         for (final ClassLibProvider classLibProvider : LOADER) {
             result.add(classLibProvider);
         }
+        System.out.println("availableProviders #: " + result.size()+ ", result: " + result);
         return result;
     }
 }

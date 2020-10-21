@@ -18,6 +18,7 @@
         <module>java.base</module>
         <module>java.datatransfer</module>
         <module>java.xml</module>
+        <module>gdx</module>
         <module>java.desktop</module>
         <module>java.logging</module>
         <module>bytecoder.opencl</module>

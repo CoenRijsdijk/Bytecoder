@@ -65,6 +65,7 @@ public class BytecodeShadowReplacer extends BytecodeReplacer {
         }
         try {
             final String theShadowNameStr = theShadowName.toString();
+            System.out.println("theShadowNameStr: " + theShadowNameStr);
             defaultReplacer.addTypeMap(theShadowNameStr, theObjectType.name());
             final BytecodeClass theShadowType = loader.loadByteCode(new BytecodeObjectTypeRef(theShadowNameStr), defaultReplacer);
 
