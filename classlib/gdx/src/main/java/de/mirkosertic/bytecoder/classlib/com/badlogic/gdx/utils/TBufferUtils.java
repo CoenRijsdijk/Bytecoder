@@ -526,9 +526,4 @@ public final class TBufferUtils {
         // FIXME ouch :p
         return LongBuffer.wrap(new long[numLongs]);
     }
-
-    @de.mirkosertic.bytecoder.api.Import(module = "bufferutils", name = "testcoen")
-    public static void testCoen() {
-        System.out.println("Test test test");
-    }
 }
